@@ -1,0 +1,19 @@
+language: ruby
+jobs:
+  include:
+     - stage: ONE
+       os: ubuntu
+       arch: arm64
+       script: ruby ./hello.rb
+     - stage: TWO
+       os: ubuntu
+       arch: amd64     
+       script: ruby ./hello.rb
+     - stage: THREE
+       os: ubuntu
+       arch: arm64
+       script: ruby ./hello.rb
+     - stage: FOUR
+       os: ubuntu
+       arch: arm64
+       script: ruby ./hello.rb
